@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+
+
+<style>
+    /* we can use margin and padding 0 to remove boxes space */
+     /* margin:0; 
+    padding:0;  */
+    .box{
+        color: purple;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(183, 215, 224);
+        border: 2px solid black;
+        margin: 10px;
+    }
+
+    .box1{
+        color: rgb(10, 124, 217);
+        background-color: rgb(199, 150, 150);
+        padding: 10px;
+        margin: 5px;
+        border: 5px solid blue;
+        /* this is total hieght without  content padding and border */
+        height: 200px;
+        /* When we include box-sizing: content-box then content padding and border total 200 hieght will be added ; */
+        box-sizing: border-box;
+         width: 500px;
+
+    }
+    .box2{
+        background-color: rgb(151, 202, 151);
+    }
+</style>
+
+</head>
+<body>
+    
+    <div class="box">This is box </div>
+    <div class="box box1" >This is box 1</div>
+    <div class="box box2">This is box 2</div>
+
+    <img src="Box_model.png" alt="Box model">
+</img>
+
+
+</body>
+</html>

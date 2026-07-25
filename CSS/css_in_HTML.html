@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<ol>
+    <li>Internal CSS</li>
+    <li>External CSS</li>
+    <li>Inline CSS</li>
+    </ol>
+
+<!-- inline css -->
+  <h3 style="color: rgb(84, 46, 210); background-color:red">Three ways to add CSS to HTML</h3>
+
+  <!-- internal css -->
+<h4>Learn Three ways to add CSS to HTML</h4>
+
+<div id="demo">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fuga molestiae tempore aut ipsam culpa quibusdam nostrum deserunt expedita autem reprehenderit pariatur porro ipsum nemo perferendis, velit suscipit maiores. Commodi!
+</div>
+
+<a href="https://www.google.com/" >Go to Google</a>
+<a href="https://www.facebook.com/" >Go to Facebook</a>
+
+<style>
+    /* hesadhing selector */
+h4 {
+    color: rgb(46, 210, 90);
+    background-color: rgb(255, 0, 187);
+}
+/*  id selector */
+#demo {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 0);
+}
+
+/* class selector */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* group selector */
+.container .content {
+    width: 40%;
+    float: left;
+}
+
+/* child means paragraph selector */
+.container .content p {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 0);
+}
+
+div > p {
+    color: rgb(151, 199, 18);
+    background-color: rgb(105, 10, 213);
+}
+
+/* nested selector */
+
+.container .content .dear p {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 0);
+}
+/* decendant selector */
+
+.container .content p {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 0);
+}
+
+/* These all are universal selector/ pseudo selector after click show other color */
+
+a:visited {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 0);
+}
+a:link {
+    color: rgb(133, 14, 38);
+    background-color: rgb(27, 195, 91);
+}
+/* on hover use other color */
+a:hover {
+    color: rgb(18, 174, 209);
+    background-color: rgb(255, 255, 0);
+}
+
+/* on click color change */
+a:active {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 0);
+}
+
+/*  ALl elemnets margin and  padding 0 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+</style>
+
+  <!-- external css link style.css file in html nad make other file name style.css-->
+
+
+
+</body>
+</html>
