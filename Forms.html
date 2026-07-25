@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon job Application</title>
+    <style>
+    body {
+      background-color: rgb(199, 215, 228);
+    }
+    .required {
+      color: red;
+    }
+</style>
+
+</head>
+<body>
+    <h1>  Apply for Virtual Assistant Amazon job</h1>
+    <form action="post">
+        <!-- Form Elements -->
+         <!-- Input for name -->
+<!-- div tag  using for space like br tag we can also use br tag for space  -->
+<div>
+ <label for="username"> Full Name <span class="required">*</span></label>
+<input type = "text" id="username" name="name" placeholder = "Enter your name" required>
+</div><br>
+
+
+ <!-- input for email -->
+
+<label for = "email">Email <span class ="required">*</span></label>
+<input type ="text" id = "email" name ="Email" placeholder = "Enter your email" required>
+<br><br>
+
+<!-- input for password -->
+ <div>
+<label for="password">Pass<span class ="required">*</span></label>
+<input type="password" id =" password" name="Pass" placeholder = " Enter your password " required>
+</div><br>
+
+<!-- input for date -->
+<label for="date">Date<span class ="required">*</span></label>
+<!-- here br tag work like div tag -->
+<input type="date" id="date" name="Date" 
+placeholder="mm/dd/yyyy" required><br><br>
+
+<!-- input for gender -->
+ <!-- here div tag using for group -->
+<div>
+<label >Gender:<span class ="required">*</span></label><br>
+<label for ="male">Male</label>
+<input type = "radio" id ="male" name ="gender" value ="male"required ></inpput>
+
+<!-- input for female -->
+<label for="female">Female</label>
+<input type ="radio"id ="gender" name="gender" value="female"></input>
+</div><br>
+
+
+<!-- checkbox for buyer and seller -->
+ <!-- here div tag using for group -->
+<div>
+  <label >Account type:<span class ="required">*</span></label><br>
+  <label for="buyer">Buyer</label>
+  <input type="radio" id="buyer" name="Account type" required>
+
+  <label for="seller">Seller</label>
+  <input type="radio" id="seller" name="Account type">
+  <label for="other">Job Applicant</label>
+</div><br>
+
+<!-- checkbox using just for one input, not use for group -->
+<input type="checkbox" id="subscribe" name="Subscribe" value="yes"></input>
+<label for="subscribe">Subscribe to newsletter<span class ="required">*</span></label>
+
+</div><br><br>
+<!--input for textarea  -->
+
+<div>
+    <label for="message">Message<span class ="required">*</span></label>
+    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+</div><br><br>
+
+<label for="resume">Upload Resume<span class ="required">*</span></label>
+<input type="file" id="resume" name="resume" required></input><br><br>
+
+</div>
+
+<!-- input for Submit Form -->
+
+<input type="submit" value="Apply" ></input>
+
+
+
+</form>
+</body>
+</html>
