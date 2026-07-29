@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+
+<script>
+//  Switch Statement in java Script
+var day = 1; // print day 1 which is define in case 1: if we want to print var day = 2 then we can change the value of day, then we can print day case 2 which is Monday
+
+switch(day){
+case 1:
+    document.write ("Sunday");
+    break;
+case 2:
+    document.write ("Monday");
+    break;
+case 3:
+    document.write  ("Tuesday");
+    break;
+case 4:
+    document.write ("Wednesday");
+    break;
+case 5:
+    document.write ("Thursday");
+    break;
+case 6:
+    document.write ("Friday");
+    break;
+case 7:
+    document.write ("Saturday");
+    break;
+default:
+    document.write ("Invalid day");
+    break;
+}
+
+//  we can use multiple case like this
+var day2 = 5;
+switch(day2){
+case 1: case 2: case 3: case 4: case 5: case 6: case 7:
+    document.write ("Weekdays");
+    break;
+default:
+    document.write ("Invalid day");
+    break;
+}
+//  using coparison operators
+var age = 20
+switch(true){
+case (age >=18 && age <=20):
+ document.write("You are a eligible ");
+break;
+  case (age>21 && age <=25):
+ document.write("You are not eligible");
+ break;
+ default:
+ document.write("Invalid age");
+ break;
+
+}
+
+</script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+
+    <script>
+//  for loop ,  While loop , do while loop, break loop, continue loop, nested loop,  for/each loop use for arrays , for/in loop use for objecs ,
+// #1 initialization , #2 condition , #3 increment, decrement
+
+// for loop most use this one
+for (var z = 0; z < 10; z++) {
+    console.log(z);
+}
+
+for (var z = 1; z <+ 10; z++) {
+    document.write("Hello world<br><br>"); 
+}
+
+// while loop ,    it will be system hanging
+
+// var i = 1; 
+//  initialization 
+// condition 
+// while (i <= 5) {
+// console.log("Hello world");
+// or
+// document.write("Hello world");
+//  increment
+//     i++;
+// }
+
+// do while loop
+// var i = 1; 
+ // do {
+// console.log("Hello world");
+// or
+// a + means 1,2,3, print with hello world
+// document.write(a + "Hello world");
+//     i++;
+// } while (i <= 5);
+
+
+
+// break loop
+
+for(var a =1; a <=10; a++){
+
+    if(a == 8){
+        document.write("Hello : "+ a + "<br>");
+        break;
+    }
+    document.write("Number : "+ a + "<br>");
+    
+}
+
+// continue loop
+for(var a = 1; a <=10; a++){
+
+    if(a == 5){
+        document.write("Hello : "+ a + "<br>");
+        continue;
+    }
+    document.write("Number : "+ a + "<br><br>");
+    
+}
+
+
+//   example nested loop watch video Yahu baba on youtube
+
+for ( var y = 1; y <=5; y++){
+  for ( var x = 1; x <= y; x++){
+    document.write( x + " ");
+}
+document.write("<br><br>");
+
+}
+
+for( n = 1; n <=10; n++){
+    for(var m = 1; m<=n; m++){
+
+        document.write( n + " ")
+    }
+
+document.write("<br><br>");
+}
+
+// nested loop use for matrix or tabular form
+// a outer loop use for rows a + 10 means first row 1, 2nd row 11, 3rd row 21
+// b inner loop use for columns, var b = a; means value of a asign to b
+
+for (var a = 1; a <= 100; a = a+10) {
+    for (var b = a; b < a+10; b++ ) {
+        document.write(b + " ");  // for gap use space  " "
+    }
+    document.write("<br>");
+}
+
+for (var a = 1; a <= 100; a = a+10) {
+    for (var b = a; b < a+10; b++ ) {
+        document.write(b + " ");  // for gap use space  " "
+    }
+    document.write("<br>");
+}
+
+//  Decrement loop
+for(var c = 10; c >=1; c--){
+    for( var d = 1; d <= c; d ++){
+    document.write( d + " ");
+}
+document.write("<br><br>");
+}
+
+for(var c = 10; c >=1; c--){
+    for( var d = 1; d <= c; d --){
+    document.write( d + " ");
+}
+document.write("<br><br>");
+
+ }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

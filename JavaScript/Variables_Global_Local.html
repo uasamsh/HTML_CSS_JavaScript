@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Global and Local Variables</title>
+<script>
+//  Variables
+document.write('Allow visit website<br>');
+    document.write('<i><b>Hello world</i></b><br>');
+    // varible types var let const 
+// using Variable
+    var z = " yahu BAba<br>";
+    var x = 10; 
+    // overwrite the value
+    z= "<br>HeyYahu Baba class<br><br>";
+   document.write(x,z);
+// next method variable
+   var first, second, third;
+   first = 10;
+   second = 20;
+   third = first + second;
+   document.write(third);
+   document.write("<br>");
+
+   // we declare var again and again watch last code but not use for let declare again and again let varibales declare only one time like
+   let forth = "Yahuuuuuuuu";
+   forth = "Baba<br>"; // overwrite, we can't asign again let
+   document.write(forth);
+
+   // const declare only one time
+   const fifth = "Human";
+   // fifth = "Great";  gives error , so we can't use const value here
+   document.write(fifth + "<br>");
+
+//  Global and Local Variables, GLobal variables declare outside the function and local variables declare inside the function we mostly use Global variables
+var a = " This is a web dev class";  
+function hello(){
+document.write(a +"<br>" );
+
+}
+hello();
+document.write(a);
+
+</script>
+
+</head>
+<body>
+    
+
+
+</body>
+</html>
