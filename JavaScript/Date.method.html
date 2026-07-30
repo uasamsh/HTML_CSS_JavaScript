@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+<script>
+//  Date methods
+// getFullYear() , getMonth() , getDate() , getDay() , getHours() , getMinutes() , getSeconds()
+ // getUTCHours() , getUTCMinutes() , getUTCSeconds()
+
+
+// Display heading for current date and time
+document.write("<h1>Current Date and Time</h1>");
+
+// Create a paragraph element to hold the clock display
+document.write("<p id='clock'></p>");
+
+// Function to get current time and update the paragraph element
+function updateTimeInPTag() {
+    let now = new Date();
+    document.getElementById("clock").innerText = now.toLocaleTimeString();
+}
+
+// Execute updateTimeInPTag function every 1000 milliseconds (1 second)
+setInterval(function() {
+    updateTimeInPTag();
+}, 1000);
+
+
+document.write("<br><br>");
+var currendate = new Date().toLocaleDateString();
+document.write("This is current date : " +currendate);
+console.log(currendate);
+
+document.write("<br><br>");
+
+//  Show the current date and time
+document.write("<h1>Current Date and Time</h1>");
+setInterval(function(){
+updateTimeInPTag();
+},1000);
+
+
+
+document.write("<br><br>");
+document.write("<h1> This is a new Current Date and Time</h1>");
+ var now = new Date();
+ document.write(now);
+  console.log(now);
+document.write("<br><br>");
+
+
+ // no need in output GMT and UTC , just show day date month year
+document.write(now.toDateString());
+document.write(" This is Another Current Date and Time <br><br>");
+document.write("<br><br>");
+document.write(now.toLocaleString());
+document.write("<br><br>");
+document.write(now.toLocaleDateString());
+document.write("<br><br>");
+document.write(now.toLocaleTimeString());
+document.write("<br><br>");
+document.write(now.getFullYear());
+document.write("<br><br>");
+document.write(now.getMonth());
+document.write("<br><br>");
+document.write(now.getDate());
+document.write("<br><br>");
+document.write(now.getDay());
+document.write("<br>");
+document.write(now.getHours());
+document.write("<br>");
+document.write(now.getMinutes());
+document.write("<br>");
+document.write(now.getSeconds());
+document.write("<br>");
+document.write(now.getMilliseconds());
+document.write("<br>");
+document.write(now.getTime());
+document.write("<br>");
+
+  
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
