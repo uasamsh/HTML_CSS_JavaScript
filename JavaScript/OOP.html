@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming</title>
+
+    <script>
+// Object-Oriented Programming (OOP) Description
+// Object-Oriented Programming is a coding methodology, style, and pattern that organizes software design around data or objects rather than functions and logic.
+
+// Key Features of OOP:
+// Code more Modular and Reusable: Allows you to break code into independent pieces and reuse them across the project.
+
+// Well Organized Code: Keeps complex applications structured and clean.
+
+// Easier to Debug: Simplifies finding and fixing errors within specific objects or classes.
+
+// Best for Medium to Large Website Projects: Ideal for managing scalable and complex software architectures.
+
+// Best for Small Projects: Useful for prototyping and simple applications.
+
+//  # 1 class: declare class name
+//  # 2 properties: declare varibles inside the class
+//  # 3 methods: declare functions inside the class
+//  # 4 objects: declare objects inside the class
+
+
+
+
+// Types of methods/functions
+// #1 Instance Method: are methods that are called on an object of the class.
+// #2 Constructor Method: is a special method that is called when an object is created. 
+// #3 Prototype Method: are methods give parameters like ( name , age), next line this.name = name; this.age = age; and then let a = new Student("john", 25);
+// #4Static methods: are methods that are called without creating an object of the class.
+
+
+// #1 Instance Method:
+class hello{
+    message(){    // function/methods 
+  console.log("Hello World");
+  document.write("Hello World <br>" );
+    }
+// we can write the other fuction/method
+sum(){
+    console.log(10+20);
+    document.write(10+20 +"<br>");
+}
+}
+
+// object is var a 
+var a = new hello;
+a.message(); // method
+a.sum();
+
+
+// #2 Constructor Method called automatically
+class Student{
+    constructor(){
+    document.write("This a constructor method <br>");
+}
+}
+let abc = new Student();
+let zxy = new Student();
+
+
+//  prototype method
+
+class std{
+constructor(compnay, year){
+this.lancome = compnay;
+this.year = year;
+document.write(this.lancome +  "<br>" + this.year + "<br>");
+}
+}
+let zee = new std("lancome", 2026);
+
+
+//  other method of prototype
+class std2{
+    constructor(fname, lname){
+this.firstName = fname;
+this.lastName = lname;
+document.write(this.firstName +  "<br>" + this.lastName + "<br>");
+}
+
+fullName (){
+    document.write(" This First name is : " + this.firstName + "<br>" + " The last name is : " + this.lastName);
+    document.write("<br>");
+}
+}
+let show = new std2("Zohaib", "Hussain");
+
+//  we can reuse code
+let show2 = new std2 ("Fiza", "Hussain");
+var show3 = new std2( "john", "doe") // we can use var also here
+show.fullName();
+show2.fullName();
+show3.fullName();
+
+
+
+document.write("<br><br>");
+
+//  Short Method of prototype
+
+class greet {}
+
+// Adding a method out of the the class  using Prototype must be done like this
+greet.prototype.greeting=function(){
+    document.write("Hello everyone <br>");
+}
+// Creating a new instance (object) of the Student class
+let obj = new greet(); // use ()
+// Calling the prototype method
+obj.greeting();
+
+
+// Static method without call object
+class calculator{
+static add(a, b){
+    document.write("This is static method :" + (a+b)  + "<br>")
+}
+}
+calculator.add(10, 20);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
