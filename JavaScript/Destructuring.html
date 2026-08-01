@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Advance JS Destructuring.</title>
+    <script>
+        // Destructuring  let { fname, age , city} = user;
+        // Array Destructuring
+        // Object Destructuring
+ //  Destructuring in Arrays
+//  1 ) Varialble: we can use variables to store values, Function / Global but avoid to write var it is old way,
+// 2) const: we can't update the value it is constant.
+// 3) let: is new way Flexible use let  for updating the value like:
+
+
+// Array Destructuring
+let std = ["John", 22 , "NJ"];
+
+let[fname, Age = 31 , State ]= std; // update the age value
+
+document.write(fname + "   " + Age + "  " + State +"<br>");
+
+//  nested array destructuring
+let student =[ ["Fiza", "Hussain"], ["Female", "10,000"] ];
+
+let [ [fName, lname], [gender, salary] ] = student; // Destructuring
+document.write(fName + "   " + lname + "  " + gender + "  " + salary +"<br>");
+
+
+//  Destructuring in  Objects.
+let user={
+    name:"Humera",
+    age:30,
+    isAdmin:true
+}
+//now  Destructuring
+let { name, age, isAdmin } = user;
+document.write(user.name,"  " + user.age, " " + user.isAdmin);
+
+    </script>
+</head>
+<body>
+    
+
+
+
+</body>
+</html>

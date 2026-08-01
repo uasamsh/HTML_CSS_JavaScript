@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+<script>
+
+//  Objects with new methods
+var std2 = new Object();
+std2.FirstName = "John";
+std2.LastName = "Doe";
+std2.Age = 25;
+std2.City = "New York";
+
+ console.log(std2);
+ document.write(std2.FirstName , "   " + std2.LastName , "    " + std2.Age , "    " + std2.City +"<br><br>");
+
+// Must mention name of the object we use array also in obejcts
+
+var std = {
+    FirstName:"John",
+    LastName:"Doe",
+    Age:25,
+    City:"New York",
+    Skills: ["HTML", "CSS", "javaScript"],
+
+    // we can also write another object in obejcts
+    Address: {
+        Street: "123 Main St",
+        City: "New York",
+        State: "NY"
+    },
+
+    // functions in object
+    Salary: function(){
+        return 10000;
+    },
+    fullName: function(){
+  return this.FirstName + " " +"<br>" + this.LastName + " " +"<br>" + this.Salary(); // this means variable name
+
+    }
+}
+console.log(std);
+document.write( std.FirstName);
+document.write("<br>");
+document.write(std.Salary());
+document.write("<br><br>");
+document.write(std.fullName());
+document.write("<br><br>");
+document.write(std.Skills[0]);
+document.write("<br><br>");
+document.write(std.Address.Street);
+document.write("<br><br>");
+document.write(std.Address.City);
+document.write("<br><br>");
+document.write(std.Address.State);
+
+</script>
+
+</head>
+<body>
+    
+    <a href='#' class='btn-go-live'>Goto live</a>
+</body>
+</html>
