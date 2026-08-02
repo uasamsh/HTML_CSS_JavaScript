@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class inheritance in JS</title>
+
+    <script >
+class compnay { // parent class or base class or super class
+constructor (){
+    document.write("The  compnay name is Prime Tech" + " <br>");
+}
+}
+class employee extends compnay {
+
+}
+new compnay(); 
+new employee();
+
+// 2nd example
+class Teacher{
+    constructor(name, age){
+        document.write(" Compnay name is change: " + name + "<br>" + "The company started year :" + age + " <br>");
+    }
+}
+class Student extends Teacher{ // child class or drive class
+
+}
+ new Teacher ("Prime deal Tech" , 2006);
+ new Student ("john" , 2008);
+
+
+//   3rd example
+class greet{
+constructor(){
+    document.write("Hello world <br>");
+}
+}
+class heloo extends greet{
+constructor(name){
+    super(); // 👈  call Parent constructor must otherwise code give error
+    document.write("Hello  " + name + " How are you ?<br>" );
+}
+}
+new greet();
+new heloo ("Zohaib Hussain.");
+
+// 4th example with prototype method
+
+class teach {
+    constructor(name, age){
+        this.fname = name; // prototype
+        this.age = age;
+        // or we can write     teach.prototype.fname = function(){ }
+        document.write(" The name of the teacher is : " + this.fname + "<br>" + " The age of the teacher is : " + this.age + "<br>");
+    }
+    info(){
+        document.write(" Teacher name is : " + this.fname + "<br>" + "  Teacher age is : " + this.age + "<br>");
+    }
+}
+   class std extends teach {
+ info(){
+    super.info();  // if the parent class have info then we must use super.info(); call prent info
+        document.write(" Student name is : " + this.fname + "<br>" + "  Student age is : " + this.age + "<br>");
+    }
+    }
+   
+ var te = new teach ("Simba" , 32);
+te.info(); // now we call info method
+var st = new std ("zainab" , 22)
+st.info();
+ 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
